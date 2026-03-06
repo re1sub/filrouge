@@ -34,7 +34,7 @@ app.get("/", (_req, res) => {
 });
 
 
-app.use("/api/test/email", (req, res) => {
+app.post("/api/test/email", (req, res) => {
   const { email } = req.body;
 
 	const transporter = nodemailer.createTransport({
