@@ -29,7 +29,7 @@ export const register = async (req, res) => {
 		});
 
 		await transporter.sendMail({
-			from: `"CyberMapp" <justsomedude060@gmail.com>`,
+			from: `"CyberMapp" <${process.env.MAIL_USER}>`,
 			to: email,
 			subject: "Vérifie ton compte CyberMapp",
 			html: `
