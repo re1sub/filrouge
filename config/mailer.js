@@ -4,11 +4,11 @@ import nodemailer from "nodemailer";
 dotenv.config();
 
 const transporter = nodemailer.createTransport({
-	host: process.env.MAIL_HOST,
+	host: "smtp-relay.brevo.com",
 	port: 587,
 	auth: {
-		user: process.env.MAIL_USER,
-		pass: process.env.MAIL_PASS,
+		user: "a38cd0001@smtp-brevo.com",
+		pass: "xsmtpsib-39612600e19495e9a5255e8596825ee2ccddd0b24a7b02a325962cd5a29743b0-Kt0o5lkQHnG4soAR",
 	},
 });
 
